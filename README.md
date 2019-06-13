@@ -21,7 +21,7 @@ Alfred is a Pentesting Framework for Beginners.
 
 * `sudo apt-get update`
 * `python3 setup.py install`
-* `Alfred`
+* `alfred`
 
 **NOTE**: Apart from python packages it needs nmap and libimage-exiftool-perl.
 
