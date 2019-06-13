@@ -11,6 +11,7 @@ nspython - DNS querying<br />
 proxifetch - Fetch proxy from API<br />
 ddos - DDoS a host<br />
 
+Show your love <a href="https://saythanks.io/to/D4mianWayne">here</a>
 FAQ
 
 How can I install it?<br />
