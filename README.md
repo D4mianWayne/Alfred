@@ -19,7 +19,8 @@ How can I install it?<br />
   <code>sudo python3 setup.py install</code><br />
   <code>sudo Alfred</code>
  
- <strong>What additional packages are required for it?</strong><br />
- Apart from python packages it needs nmap and libimage-exiftool-perl.
+<strong>What additional packages are required for it?</strong><br />
+Apart from python packages it needs nmap and libimage-exiftool-perl.
  
- 
+<strong>Screenshot(s)</strong><br />
+<img src="/Snaps/Screenshot from 2019-06-13 17-27-23.png">
