@@ -9,7 +9,7 @@ def url2ip(url):
 def nmap(host,s_type,os_detection=False):
     print(colored("[+]Scanning {}".format(host),"green",attrs=["reverse","blink"]))
     table = {1:"-sT",2:"-sU",3:"-sV",4:"-sS",5:"-sX",6:"-sC"}
-    if os_detection:
+    if os_detection != False:
         os.system("nmap {} -O -Pn {}".format(table[s_type],host))
     else:
         os.system("nmap {} -Pn {}".format(table[s_type],host))
