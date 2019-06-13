@@ -29,14 +29,21 @@ Show your love [here](https://saythanks.io/to/D4mianWayne)
 
 ### Usage
 ##### `nmtool`
-![]`
-* `metadata` - Extract metadata of PDF and Image
-* `dirbrute` - bruteforce directories and files
-* `ftpbrute` - bruteforce ftp service for credentials
-* `hash` - check hashvalue from hashtoolkit
-* `nspython` - DNS querying
-* `proxifetch` - Fetch proxy from API
-* `ddos` - DDoS a host
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/nmtool.png)
+#### `metadata`
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/metadata.png)
+#### `dirbrute`
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/dirbrute.png)
+#### `ftpbrute`
+Will be added soon.
+#### `hash`
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/hash.png)
+#### `nspython`
+Will be added soon.
+#### `proxifetch`
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/proxifetch.png)
+#### `ddos`
+Will be added soon.
 
 
 
