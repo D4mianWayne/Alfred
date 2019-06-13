@@ -1,27 +1,28 @@
 # Alfred
-<strong>A Pentesting Framework for Beginners.</strong>
+![](/Snaps/Screenshot from 2019-06-13 17-27-23.png)
 
-Available Tools:<br />
-Nmtool- Nmap Scan Tool<br />
-metadata - Extract metadata of PDF and Image<br />
-dirbrute - bruteforce directories and files<br />
-ftpbrute - bruteforce ftp service for credentials<br />
-hash - check hashvalue from hashtoolkit<br />
-nspython - DNS querying<br />
-proxifetch - Fetch proxy from API<br />
-ddos - DDoS a host<br />
+Alfred is a Pentesting Framework for Beginners.
 
-Show your love <a href="https://saythanks.io/to/D4mianWayne">here</a><br />
-FAQ
+### Available Tools:
 
-How can I install it?<br />
-<code> git clone https://github.com/D4mianWayne/Alfred</code><br />
-  <code>sudo apt-get update</code><br />
-  <code>sudo python3 setup.py install</code><br />
-  <code>sudo Alfred</code>
- 
-<strong>What additional packages are required for it?</strong><br />
-Apart from python packages it needs nmap and libimage-exiftool-perl.
- 
-<strong>Screenshot(s)</strong><br />
-<img src="/Snaps/Screenshot from 2019-06-13 17-27-23.png">
+* `Nmtool`- Nmap Scan Tool
+* `metadata` - Extract metadata of PDF and Image
+* `dirbrute` - bruteforce directories and files
+* `ftpbrute` - bruteforce ftp service for credentials
+* `hash` - check hashvalue from hashtoolkit
+* `nspython` - DNS querying
+* `proxifetch` - Fetch proxy from API
+* `ddos` - DDoS a host
+
+### Installation
+
+* Clone the repository
+    - git clone https://github.com/D4mianWayne/Alfred
+
+* `sudo apt-get update`
+* `python3 setup.py install`
+* `Alfred`
+
+**NOTE**: Apart from python packages it needs nmap and libimage-exiftool-perl.
+
+Show your love [here](https://saythanks.io/to/D4mianWayne)
