@@ -1,10 +1,5 @@
 import os
 from termcolor import colored
-import socket
-import re
-
-def url2ip(url):
-    return socket.gethostbyname(url)
 
 def nmap(host,s_type,os_detection=False):
     print(colored("[+]Scanning {}".format(host),"green",attrs=["reverse","blink"]))
@@ -20,7 +15,7 @@ def main():
                   ==============================
                   1: TCP Scan
                   2: UDP Scan
-                  3: Verson Scan
+                  3: Version Scan
                   4: TCP SYN Scan
                   5: Xmas Scan
                   6: Checks Default Scripts for Vulnerlability''',"yellow"))  
