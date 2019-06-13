@@ -20,6 +20,6 @@ How can I install it?<br />
   <code>sudo Alfred</code>
  
  <strong>What additional packages are required for it?</strong><br />
- Apart from requirements.txt it needs nmap and libimage-exiftool-perl.
+ Apart from python packages it needs nmap and libimage-exiftool-perl.
  
  
