@@ -49,6 +49,7 @@ try:
             exit(0)
         else:
             print(colored("[!]Unknown Command, if it's valid then it'll be added soon","red",attrs=['reverse','blink']))
+            main()
 except KeyboardInterrupt:
     print(colored("Exiting.......","green"))
     exit(0)
