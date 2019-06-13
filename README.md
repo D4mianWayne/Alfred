@@ -12,7 +12,7 @@ Alfred is a Pentesting Framework for Beginners.
 * `hash` - check hashvalue from hashtoolkit
 * `nspython` - DNS querying
 * `proxifetch` - Fetch proxy from API
-* `ddos` - DDoS a host
+
 
 ### Installation
 
@@ -42,8 +42,8 @@ Will be added soon.
 Will be added soon.
 #### `proxifetch`
 ![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/proxifetch.png)
-#### `ddos`
-Will be added soon.
+
+
 
 
 
