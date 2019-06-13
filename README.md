@@ -29,8 +29,8 @@ Show your love [here](https://saythanks.io/to/D4mianWayne)
 
 ### Usage
 ##### `nmtool`
-`[Alfred]>nmtool
- [*]Scan for Open Ports on Host
+`[Alfred]>nmtool`
+`[*]Scan for Open Ports on Host
                   ==============================
                   1: TCP Scan
                   2: UDP Scan
