@@ -37,7 +37,6 @@ try:
             main()
         elif term == "dirbrute":
             dirbrute.main()
-            main()
         elif term == "help":
             helper.main()
             main()
