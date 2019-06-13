@@ -1,4 +1,3 @@
-import PyPDF2
 from PyPDF2 import PdfFileReader
 import os
 from termcolor import colored
@@ -30,4 +29,4 @@ def main():
         metadata_image(image)
     else:
         print(colored("[!]Wrong Input","red"))
-    
+

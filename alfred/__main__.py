@@ -1,6 +1,5 @@
-from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, ddos, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata
+from . import ftpbrute, ddos, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu
 import os
 
 try:
@@ -12,7 +11,7 @@ try:
              to tools which are most commonly used to pentesting and CTFs and
              some other tools which will be handy."""
     print(colored(banner,"blue"))
-    
+
     def main():
         term = input("[Alfred]>").lower()
         if term == "nmtool":
