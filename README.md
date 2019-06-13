@@ -15,7 +15,6 @@ FAQ
 
 How can I install it?<br />
 <code> git clone https://github.com/D4mianWayne/Alfred</code><br />
-  <code>pip install -r requirements.txt</code><br />
   <code>sudo apt-get update</code><br />
   <code>sudo python3 setup.py install</code><br />
   <code>sudo Alfred</code>
