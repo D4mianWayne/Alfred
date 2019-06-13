@@ -1,5 +1,5 @@
 # Alfred
-![](/Snaps/Screenshot from 2019-06-13 17-27-23.png)
+![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/Screenshot%20from%202019-06-13%2017-27-23.png)
 
 Alfred is a Pentesting Framework for Beginners.
 
