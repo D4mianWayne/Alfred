@@ -26,3 +26,5 @@ Alfred is a Pentesting Framework for Beginners.
 **NOTE**: Apart from python packages it needs nmap and libimage-exiftool-perl.
 
 Show your love [here](https://saythanks.io/to/D4mianWayne)
+
+
