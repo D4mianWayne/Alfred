@@ -8,7 +8,7 @@ import json
 def check_db():
     if not os.path.exists("/usr/share/exploitdb"):
         print(colored("[!]Unable to find the database.","red",attrs=["reverse","blink"]))
-    return 
+        return 
     f = Figlet(font="slant")
     print(colored(f.renderText("Search"),"cyan"))
     platforms = ["linux","windows","macos"]
