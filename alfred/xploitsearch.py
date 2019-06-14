@@ -22,7 +22,7 @@ def check_db():
 
 def main():
     search = check_db()
-    xploit = search+input("Search: ")
+    xploit = search+" "+input("Search: ")
     print(colored("Running Search....","yellow"))
     data = subprocess.check_output("searchsploit -j {}".format(xploit),shell=True)
     data = json.loads(data)
