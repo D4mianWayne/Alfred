@@ -18,7 +18,8 @@ def check_db():
     elif message in platforms:
         return message
     else:
-        print(colored("[!]UNknown Platform, use all command."))
+        print(colored("[!]Unknown Platform, use all command."))
+        return ""
 
 def main():
     search = check_db()
