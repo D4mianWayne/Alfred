@@ -36,5 +36,5 @@ def main():
                    "Platform: {Platform}"
                    "Path: {Path}"
                    "Author: {Author}").format(**exploit)
-    print(colored(message,"yellow"))
+        print(colored(message,"yellow"))
     print(colored("-"*60))
