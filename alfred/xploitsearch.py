@@ -33,8 +33,8 @@ def main():
     for exploit in data["RESULTS_EXPLOIT"]:
         print(colored("="*60))
         message = ("Title: {Title}"
-                   "Platform: {Platform}"
-                   "Path: {Path}"
-                   "Author: {Author}").format(**exploit)
+                   "\nPlatform: {Platform}"
+                   "\nPath: {Path}"
+                   "\nAuthor: {Author}").format(**exploit)
         print(colored(message,"yellow"))
     print(colored("-"*60))
