@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, ddos, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata
+from . import ftpbrute, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
 import os
 
 try:
@@ -24,8 +24,8 @@ try:
         elif term == "hash":
             hash.main()
             main()
-        elif term == "ddos":
-            ddos.main()
+        elif term == "xploitsearch":
+            xploitsearch.main()
             main()
         elif term == "proxifetch":
             proxifetch.main()
