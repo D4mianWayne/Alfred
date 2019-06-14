@@ -5,24 +5,26 @@ from pyfiglet import Figlet
 import json
 
 
-def check_db():
+def db_check():
     if not os.path.exists("/usr/share/exploitdb"):
-        print(colored("[!]Unable to find the database.","red",attrs=["reverse","blink"]))
-        return 
-    f = Figlet(font="slant")
-    print(colored(f.renderText("Search"),"cyan"))
-    platforms = ["linux","windows","macos"]
-    message = colored(input("Platform [{}]: ".format(''.join(platforms)),"cyan").lower())
-    if message == "all":
+        print("[!] Couldn't find exploit database. Try running install.py again. [!]")
+        return
+
+    f = Figlet(font='slant')
+    print(f.renderText("     Search"))
+    supported_platforms = ['windows', 'linux', 'macos', 'php']
+    message = "Platform [{}, all]: ".format(",".join(supported_platforms))
+    q1 = input(message).lower()
+    if q1 == 'all':
         return ""
-    elif message in platforms:
-        return message
+    elif q1 in supported_platforms:
+        return q1
     else:
-        print(colored("[!]Unknown Platform, use all command."))
+        print("[!] Unknown platform '{}'. Use 'all'".format(q1))
         return ""
 
 def main():
-    search = check_db()
+    search = db_check()
     xploit = search+" "+input("Search: ")
     print(colored("Running Search....","yellow"))
     data = subprocess.check_output("searchsploit -j {}".format(xploit),shell=True)
