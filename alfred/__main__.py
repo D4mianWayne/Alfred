@@ -1,5 +1,6 @@
+from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, ddos, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu
+from . import ftpbrute, ddos, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata
 import os
 
 try:
@@ -11,7 +12,7 @@ try:
              to tools which are most commonly used to pentesting and CTFs and
              some other tools which will be handy."""
     print(colored(banner,"blue"))
-
+    
     def main():
         term = input("[Alfred]>").lower()
         if term == "nmtool":
@@ -22,6 +23,9 @@ try:
             main()
         elif term == "hash":
             hash.main()
+            main()
+        elif term == "ddos":
+            ddos.main()
             main()
         elif term == "proxifetch":
             proxifetch.main()
@@ -34,6 +38,7 @@ try:
             main()
         elif term == "dirbrute":
             dirbrute.main()
+            main()
         elif term == "help":
             helper.main()
             main()
@@ -44,7 +49,6 @@ try:
             exit(0)
         else:
             print(colored("[!]Unknown Command, if it's valid then it'll be added soon","red",attrs=['reverse','blink']))
-            main()
 except KeyboardInterrupt:
     print(colored("Exiting.......","green"))
     exit(0)

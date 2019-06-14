@@ -14,6 +14,7 @@ def tools():
         ['nmtool','Scan host for open ports'],
         ['nspython','A DNS querying Tool'],
         ['hash','Checks the value of a given hash from hashtoolkit'],
+        ['ddos','DDoS a given host and Port'],
         ['proxifetch','Fetch proxy from API'],
         ['metadata',"Retrieve Metadata from Image and PDF files"],
         ['ftpbrute',"Bruteforce FTP for credentials recover"],

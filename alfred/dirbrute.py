@@ -57,7 +57,7 @@ def brute_forcer(word_queue, target_url, extensions):
                 if len(response.read()):
                     if response.url not in successful_attempts:
                         successful_attempts.append(response.url)
-                        print(colored("[+] {} => {}".format(response.code,response.url),"cyan"))
+                        print(colored("\n[+] {} => {}".format(response.code,response.url),"cyan"))
             except:
                 pass
 
