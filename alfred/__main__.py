@@ -8,7 +8,7 @@ try:
     menu.welcome()
     print(colored('='*60,"cyan"))
     banner = """
-             Alfred is a penetration testing framework while introduces the user
+             Alfred is a penetration testing toolkit while introduces the user
              to tools which are most commonly used to pentesting and CTFs and
              some other tools which will be handy."""
     print(colored(banner,"blue"))
