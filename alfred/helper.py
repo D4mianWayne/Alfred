@@ -6,7 +6,7 @@ def main():
         ['Command','Description'],
         ['help','Display current menu'],
         ['tools','Shows Available Tools'],
-        ['search','Search Exploits and get info'],
+        ['xploitsearch','Search Exploits and get info'],
         ["exit","Exit Framework"]
     ]
     table = SingleTable(table_content)
