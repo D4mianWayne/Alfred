@@ -23,9 +23,6 @@ try:
         elif term == "hash":
             hash.main()
             main()
-        elif term == "ddos":
-            ddos.main()
-            main()
         elif term == "proxifetch":
             proxifetch.main()
             main()
