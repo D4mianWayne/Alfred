@@ -1,4 +1,4 @@
-####Contributors
+<strong>Contributors</strong>
 
-#Arszilla [https://github.com/Arzilla]
-#Mehtab Zaffar [https://github.com/mzfr]
+<a href="https://github.com/Arzilla">Arzilla</a>
+<a href="https://github.com/mzfr">Mzfr</a>
