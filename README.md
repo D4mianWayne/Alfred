@@ -3,8 +3,8 @@ Alfred is a penetration testing toolkit while introduces the user to commonly us
 pentesting and CTFs.
 
 ## Available Tools:
-- `Nmtool`- nmap Scan Tool
-- `metadata` - Extract metadata of PDF and Image
+- `nmtool`- nmap scan tool
+- `metadata` - Extract metadata from PDFs and images
 - `dirbrute` - brute-force directories and files
 - `ftpbrute` - brute-force ftp service for credentials
 - `hash` - check hashvalue from hashtoolkit
