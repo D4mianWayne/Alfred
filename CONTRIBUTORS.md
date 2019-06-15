@@ -1,4 +1,8 @@
-<h1>Contributors</h1>
+#Contributors
+[Arszilla][Arszilla]
 
-<a href="https://github.com/Arzilla">Arzilla</a><br />
-<a href="https://github.com/mzfr">Mzfr</a>
+[mzfr][mzfr]
+
+
+[Arszilla]:     https://github.com/Arzilla
+[mzfr]:         https://github.com/mzfr
