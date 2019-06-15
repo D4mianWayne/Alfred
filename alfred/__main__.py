@@ -1,20 +1,21 @@
 from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, nmtool,nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
+from . import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
 import os
 
 try:
     os.system('clear')
     menu.welcome()
-    print(colored('='*60,"cyan"))
+    print(colored('=' * 60, "cyan"))
     banner = """
-             Alfred is a penetration testing toolkit while introduces the user
-             to tools which are most commonly used to pentesting and CTFs and
-             some other tools which will be handy."""
-    print(colored(banner,"blue"))
-    
+Alfred is a penetration testing toolkit while introduces the user
+to commonly used and handy tools that are used in pentesting and 
+CTFs."""
+    print(colored(banner, "blue"))
+
+
     def main():
-        term = input("[Alfred]>").lower()
+        term = input("[Alfred] > ").lower()
         if term == "nmtool":
             nmtool.main()
             main()
@@ -48,10 +49,10 @@ try:
         elif term == "exit":
             exit(0)
         else:
-            print(colored("[!]Unknown Command, if it's valid then it'll be added soon","red",attrs=['reverse','blink']))
+            print(colored("[!] Unknown command", "red", attrs=['reverse', 'blink']))
             main()
 except KeyboardInterrupt:
-    print(colored("Exiting.......","green"))
+    print(colored("Exiting...", "green"))
     exit(0)
 
 if __name__ == "__main__":

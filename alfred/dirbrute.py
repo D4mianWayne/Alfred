@@ -6,6 +6,7 @@ from termcolor import colored
 threads = 50
 user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:19.0) Gecko/20100101 Firefox/19.0"
 
+
 def build_word_list(word_list_file, resume_word=None):
     fd = open(word_list_file, "rb")
     word_list = fd.readlines()
@@ -27,6 +28,7 @@ def build_word_list(word_list_file, resume_word=None):
                     resume_found = True
         return word_queue
     return None
+
 
 def brute_forcer(word_queue, target_url, extensions):
     while not word_queue.empty():
@@ -57,35 +59,35 @@ def brute_forcer(word_queue, target_url, extensions):
                 if len(response.read()):
                     if response.url not in successful_attempts:
                         successful_attempts.append(response.url)
-                        print(colored("\n[+] {} => {}".format(response.code,response.url),"cyan"))
+                        print(colored(f"\n[+] {response.code} => {response.url}", "cyan"))
             except:
                 pass
 
+
 def main():
     try:
-        print("#"*25)
-        print(colored("[+]Bruteforce Directory/File Check","magenta"))
-        word_list = input("Enter Wordlist: ")
-        url = input("Enter Url: ")
-        extensions = input("Enter File Extensions {You can also leave it empty}: ")
-        extensions = list(map(str,extensions.split()))
+        print("#" * 25)
+        print(colored("[+] Brute-force directory/file check", "magenta"))
+        word_list = input("Enter wordlist: ")
+        url = input("Enter URL: ")
+        extensions = input("Enter file extensions (You can also leave it empty): ")
+        extensions = list(map(str, extensions.split()))
         word_list = build_word_list(word_list)
         if word_list:
-            print(colored("[+]Word Queue Created.","green"))
+            print(colored("[+] Word queue created.", "green"))
             if extensions:
-                print(colored("[+]Starting.........","blue"))
-                print(colored("[*]"+', '.join(extensions),"yellow"))
+                print(colored("[+] Starting...", "blue"))
+                print(colored("[*]" + ', '.join(extensions), "yellow"))
                 for i in range(threads):
-                    t = threading.Thread(target=brute_forcer,args=(word_list,url,extensions))
+                    t = threading.Thread(target=brute_forcer, args=(word_list, url, extensions))
                     t.start()
             else:
-                print(colored("[+]Starting.........","blue"))
+                print(colored("[+] Starting...", "blue"))
                 for i in range(threads):
-                    t = threading.Thread(target=brute_forcer,args=(word_list,url,extensions))
+                    t = threading.Thread(target=brute_forcer, args=(word_list, url, extensions))
                     t.start()
         else:
-            print(colored("[!]Unable to create Word Queue.","red"))
+            print(colored("[!] Unable to create word queue.", "red"))
     except Exception as E:
         print(E)
-        print(colored("[!]Something went wrong.","red"))
-
+        print(colored("[!] Something went wrong.", "red"))

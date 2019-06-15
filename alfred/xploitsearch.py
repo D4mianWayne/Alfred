@@ -23,18 +23,19 @@ def db_check():
         print("[!] Unknown platform '{}'. Use 'all'".format(q1))
         return ""
 
+
 def main():
     search = db_check()
-    xploit = search+" "+input("Search: ")
-    print(colored("Running Search....","yellow"))
-    data = subprocess.check_output("searchsploit -j {}".format(xploit),shell=True)
+    xploit = search + " " + input("Search: ")
+    print(colored("Running Search....", "yellow"))
+    data = subprocess.check_output(f"searchsploit -j {xploit}", shell=True)
     data = json.loads(data)
-    print(colored("-"*45+"Exploit"+"-"*45,"yellow"))
+    print(colored("-" * 45 + "Exploit" + "-" * 45, "yellow"))
     for exploit in data["RESULTS_EXPLOIT"]:
-        print(colored("="*60))
+        print(colored("=" * 60))
         message = ("Title: {Title}"
                    "\nPlatform: {Platform}"
                    "\nPath: {Path}"
                    "\nAuthor: {Author}").format(**exploit)
-        print(colored(message,"yellow"))
-    print(colored("-"*60))
+        print(colored(message, "yellow"))
+    print(colored("-" * 60))
