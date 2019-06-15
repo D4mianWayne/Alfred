@@ -30,7 +30,14 @@ Show your love [here][Say Thanks]
 
 Tested on Kali Linux with Python 3.6
 
-[Say Thanks]: https://saythanks.io/to/D4mianWayne
+## Contributors
+[Arszilla][Arszilla]
 
+[mzfr][mzfr]
+
+
+[Say Thanks]: https://saythanks.io/to/D4mianWayne
+[Arszilla]:     https://github.com/Arzilla
+[mzfr]:         https://github.com/mzfr
 
 
