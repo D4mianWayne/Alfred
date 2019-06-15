@@ -19,8 +19,8 @@ $ cd Alfred
 $ python3 setup.py install
 ```
 
-## NOTE
-Apart from Python packages be sure you have  `nmap` and `libimage-exiftool-perl` installed.
+### Note
+`nmap` and `libimage-exiftool-perl` are required to use this framework.
 
 ## Usage
 After following [Installation](#Installation), just type `alfred` in your console.
