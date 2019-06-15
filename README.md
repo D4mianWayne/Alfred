@@ -1,50 +1,36 @@
 # Alfred
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/Screenshot%20from%202019-06-13%2017-27-23.png)
+Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in 
+pentesting and CTFs.
 
-Alfred is a Pentesting Framework for Beginners.
+## Available Tools:
+- `Nmtool`- nmap Scan Tool
+- `metadata` - Extract metadata of PDF and Image
+- `dirbrute` - brute-force directories and files
+- `ftpbrute` - brute-force ftp service for credentials
+- `hash` - check hashvalue from hashtoolkit
+- `nspython` - DNS querying
+- `proxifetch` - Fetch proxy from API
 
-### Available Tools:
+## Installation
+```
+$ git clone https://github.com/D4mianWayne/Alfred
+$ sudo apt-get update && sudo apt-get install nmap libimage-exiftool-perl
+$ cd Alfred
+$ python3 setup.py install
+```
 
-* `Nmtool`- Nmap Scan Tool
-* `metadata` - Extract metadata of PDF and Image
-* `dirbrute` - bruteforce directories and files
-* `ftpbrute` - bruteforce ftp service for credentials
-* `hash` - check hashvalue from hashtoolkit
-* `nspython` - DNS querying
-* `proxifetch` - Fetch proxy from API
+## NOTE
+Apart from Python packages be sure you have  `nmap` and `libimage-exiftool-perl` installed.
 
+## Usage
+After following [Installation](#Installation), just type `alfred` in your console.
 
-### Installation
+## Additional Info
+Show your love [here][Say Thanks]
 
-* Clone the repository
-    - git clone https://github.com/D4mianWayne/Alfred
+Tested on Kali Linux with Python 3.6
 
-* `sudo apt-get update`
-* `python3 setup.py install`
-* `alfred`
-
-**NOTE**: Apart from python packages it needs nmap and libimage-exiftool-perl.
-#### Tested on: Kali Linux with Python 3.6
-
-Show your love [here](https://saythanks.io/to/D4mianWayne)
-
-### Usage
-##### `nmtool`
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/nmtool.png)
-#### `metadata`
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/metadata.png)
-#### `dirbrute`
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/dirbrute.png)
-#### `ftpbrute`
-Will be added soon.
-#### `hash`
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/hash.png)
-#### `nspython`
-Will be added soon.
-#### `proxifetch`
-![](https://github.com/D4mianWayne/Alfred/blob/master/Snaps/proxifetch.png)
-
-
+[Say Thanks]: https://saythanks.io/to/D4mianWayne
 
 
 
