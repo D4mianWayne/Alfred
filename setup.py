@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='alfred',
+    name='Alfred',
     version='Beta',
     author='Ayushman Dubey',
     author_email='dubeyayushmanrobin@protonmail.com',
     description='Beginner Pentesting Toolkit/Framework',
     url='https://github.com/d4mianwayne/Alfred',
-    packages=['alfred'],
+    packages=['Alfred'],
     install_requires=[
         'termcolor',
         'PyPDF2',
@@ -21,7 +21,7 @@ setup(
     license='GNU General Public License v3 (GPLv3) (GPL)',
     zip_safe=False,
     entry_points={
-        'console_scripts':[
-            'alfred = alfred.__main__:main',
+        'console_scripts': [
+            'Alfred = Alfred.__main__:main',
         ]
     })
