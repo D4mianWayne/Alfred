@@ -45,7 +45,5 @@ def main():
     file = input("Enter filename: ")
     user = input("Enter username: ")
     default_login(host)
-    for i in range(25):
-        t = threading.Thread(target=brute_login, args=(host, user, file))
-        t.start()
+    brute_login(host,username,file)
     print("[!] Process complete!")
