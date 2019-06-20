@@ -17,13 +17,11 @@ $ git clone https://github.com/D4mianWayne/Alfred
 $ sudo apt-get update && sudo apt-get install nmap libimage-exiftool-perl
 $ cd Alfred
 $ python3 setup.py install
+$ alfred
 ```
 
 ### Note
 `nmap` and `libimage-exiftool-perl` are required to use this framework.
-
-## Usage
-After following [Installation](#Installation), just type `alfred` in your console.
 
 ## Additional Info
 Show your love [here][Say Thanks]
