@@ -22,6 +22,6 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'Alfred = alfred.__main__:main',
+            'alfred = alfred.__main__:main',
         ]
     })
