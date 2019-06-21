@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
+import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
 import os
 
 try:
@@ -51,7 +51,7 @@ CTFs."""
         else:
             print(colored("[!] Unknown command", "red", attrs=['reverse', 'blink']))
             main()
-     main()
+    main()
 except KeyboardInterrupt:
     print(colored("Exiting...", "green"))
     exit(0)
