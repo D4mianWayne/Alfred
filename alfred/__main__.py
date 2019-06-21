@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 from termcolor import colored
-import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
+from . import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
 import os
 
 try:
