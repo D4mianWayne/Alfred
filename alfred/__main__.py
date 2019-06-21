@@ -51,6 +51,7 @@ CTFs."""
         else:
             print(colored("[!] Unknown command", "red", attrs=['reverse', 'blink']))
             main()
+     main()
 except KeyboardInterrupt:
     print(colored("Exiting...", "green"))
     exit(0)
