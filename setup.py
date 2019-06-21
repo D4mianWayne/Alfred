@@ -7,7 +7,7 @@ setup(
     author_email='dubeyayushmanrobin@protonmail.com',
     description='Beginner Pentesting Toolkit/Framework',
     url='https://github.com/d4mianwayne/Alfred',
-    packages=['Alfred'],
+    packages=['alfred'],
     install_requires=[
         'termcolor',
         'PyPDF2',
@@ -22,6 +22,6 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'Alfred = Alfred.__main__:main',
+            'Alfred = alfred.__main__:main',
         ]
     })
