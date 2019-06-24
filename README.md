@@ -35,7 +35,7 @@ Tested on Kali Linux with Python 3.6
 
 
 [Say Thanks]: https://saythanks.io/to/D4mianWayne
-[Arszilla]:     https://github.com/Arzilla
+[Arszilla]:     https://github.com/Arszilla
 [mzfr]:         https://github.com/mzfr
 
 
