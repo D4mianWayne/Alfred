@@ -11,8 +11,6 @@ setup(
     install_requires=[
         'termcolor',
         'PyPDF2',
-        'terminaltables',
-        'pyfiglet',
         'requests',
     ],
     project_urls={
