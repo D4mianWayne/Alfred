@@ -1,59 +1,64 @@
 from pyfiglet import Figlet
 from termcolor import colored
-from . import ftpbrute, nmtool, nspython, proxifetch, helper, hash, metadata, dirbrute, menu, metadata, xploitsearch
+import ftpbrute, wpscan, nmap,nspython, hashcrack, metadata, dirbrute, metadata, sploitsearch
 import os
+
+def helper():
+    return """
+    ===========Available Tools==============
+    =========================================
+    [*]hashcrack 
+    [*]dirb
+    [*]ftpbrute
+    [*]nmap
+    [*]nsloookup
+    [*]exifdata
+    [*]sploitsearch
+    [*]wpscan
+    ========================================="""
 
 try:
     os.system('clear')
-    menu.welcome()
-    print(colored('=' * 60, "cyan"))
-    banner = """
-Alfred is a penetration testing toolkit while introduces the user
-to commonly used and handy tools that are used in pentesting and 
-CTFs."""
-    print(colored(banner, "blue"))
-
+    print("""
+    ===================================  ALFRED  =======================================
+    ====================================================================================
+    Name: Alfred
+    Version: 1.0
+    Created by: Ayushman Dubey (@d4mianwayne)
+    Link: https://github.com/d4mianwayne/Alfred
+    =====================================================================================""")
+    print(helper())
 
     def main():
-        term = input("[Alfred] > ").lower()
-        if term == "nmtool":
-            nmtool.main()
-            main()
-        elif term == "nspython":
-            nspython.main()
-            main()
-        elif term == "hash":
-            hash.main()
-            main()
-        elif term == "xploitsearch":
-            xploitsearch.main()
-            main()
-        elif term == "proxifetch":
-            proxifetch.main()
-            main()
-        elif term == "metadata":
-            metadata.main()
-            main()
-        elif term == "ftpbrute":
+        cmd = input("\n<alfred>")
+        if cmd == "ftpbrute":
             ftpbrute.main()
             main()
-        elif term == "dirbrute":
+        elif cmd == "dirb":
             dirbrute.main()
+        elif cmd == "hashcrack":
+            hashcrack.main()
             main()
-        elif term == "help":
-            helper.main()
+        elif cmd == "nmap":
+            nmap.main()
             main()
-        elif term == "tools":
-            menu.tools()
+        elif cmd == "nslookup":
+            nspython.main()
             main()
-        elif term == "exit":
-            exit(0)
-        else:
-            print(colored("[!] Unknown command", "red", attrs=['reverse', 'blink']))
+        elif cmd == "exifdata":
+            metadata.main()
             main()
-    main()
+        elif cmd == "sploitsearch":
+            sploitsearch.main()
+            main()
+        elif cmd == "wpscan":
+            wpscan.main()
+            main()
+        elif cmd in ["?","help"]:
+            print(helper())
+            main()
 except KeyboardInterrupt:
-    print(colored("Exiting...", "green"))
+    print(colored("Exiting.......","green"))
     exit(0)
 
 if __name__ == "__main__":
