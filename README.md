@@ -30,12 +30,13 @@ Tested on Kali Linux with Python 3.6
 
 ## Contributors
 [Arszilla][Arszilla]
-
+[BrightSide][Brightside]
 [mzfr][mzfr]
 
 
 [Say Thanks]: https://saythanks.io/to/D4mianWayne
 [Arszilla]:     https://github.com/Arszilla
+[Brightside]; https://github.com/brightsd
 [mzfr]:         https://github.com/mzfr
 
 
