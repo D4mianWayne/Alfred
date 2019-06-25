@@ -15,6 +15,7 @@ def helper():
     [*]exifdata
     [*]sploitsearch
     [*]wpscan
+    [*]help
     ========================================="""
 
 try:
@@ -56,6 +57,9 @@ try:
             main()
         elif cmd in ["?","help"]:
             print(helper())
+            main()
+        else:
+            print("Unknown Command!")
             main()
 except KeyboardInterrupt:
     print(colored("Exiting.......","green"))
