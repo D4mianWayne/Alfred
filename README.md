@@ -21,7 +21,7 @@ $ alfred
 ```
 
 ### Note
-`nmap` and `libimage-exiftool-perl` are required to use this framework.
+`nmap`, `wpscan`, `sploitsearch` and `libimage-exiftool-perl` are required to use this framework.
 
 ## Additional Info
 Show your love [here][Say Thanks]
