@@ -29,12 +29,16 @@ Show your love [here][Say Thanks]
 Tested on Kali Linux with Python 3.6
 
 ## Contributors
-[Arszilla]:     https://github.com/Arszilla
-[Brightside]; https://github.com/brightsd
-[mzfr]:         https://github.com/mzfr
+[Arszilla][Arszilla]
+
+[Brightside][Brightside]
+
+[mzfr][mzfr]
 
 
 [Say Thanks]: https://saythanks.io/to/D4mianWayne
-
+[Arszilla]:     https://github.com/Arzilla
+[mzfr]:         https://github.com/mzfr
+[Brightside]:   https://github.com/brightsd
 
 
