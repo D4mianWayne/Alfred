@@ -58,6 +58,8 @@ try:
         elif cmd in ["?","help"]:
             print(helper())
             main()
+        elif cmd in ["quit","q","exit"]:
+            exit(0)
         else:
             print("Unknown Command!")
             main()
