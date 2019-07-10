@@ -18,20 +18,20 @@ def main():
     print('''
     ============== Nmap ================
     Note: It relies on nmap, since it teaches begineers about it's usage.
-    =============== Arguments =================
+    =============== Arguments ==========================
     -sT, -sV, -sU, -sS, -sX: TCP, UDP, Version, TCP SYN, Xmas
     -A: Enable OS detection, version detection, script scanning, and traceroute 
     -Pn: Treat all hosts as online
     -sC: Run all lua scripts for vulnerabilty scanning
-    ============================================
+    ====================================================
     1: TCP Scan
     2: UDP Scan
     3: Version Scan
     4: TCP SYN Scan
     5: Xmas Scan
-    ======================================
+    ==================================================
     Usage: Type nmap to invoke and after that enter host then the number shown above to scan for respective scan.
-    ======================================
+    ==============================================================
     Example:
     <Alfred>nmap
     Enter Host: <ip address>

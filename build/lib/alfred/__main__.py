@@ -1,6 +1,6 @@
 from pyfiglet import Figlet
 from termcolor import colored
-import ftpbrute, wpscan, nmap, nspython, hashcrack, metadata, dirbrute, metadata, sploitsearch, crypto
+from . import ftpbrute, wpscan, nmap, nspython, hashcrack, metadata, dirbrute, metadata, sploitsearch
 import os
 
 def helper():
@@ -38,12 +38,9 @@ try:
     print(helper())
 
     def main():
-        cmd = input("\nalfred@assist# ")
+        cmd = input("\n<alfred>")
         if cmd == "ftpbrute":
             ftpbrute.main()
-            main()
-        elif cmd == "crypto":
-            crypto.main()
             main()
         elif cmd == "dirb":
             dirbrute.main()
