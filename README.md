@@ -1,6 +1,8 @@
 # Alfred
-Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in 
+Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in
 pentesting and CTFs.
+
+**Tested on Kali Linux with Python 3.6**
 
 ## Available Tools:
 - `nmtool`- nmap scan tool
@@ -23,10 +25,9 @@ $ alfred
 ### Note
 `nmap`, `wpscan`, `sploitsearch` and `libimage-exiftool-perl` are required to use this framework.
 
-## Additional Info
-Show your love [here][Say Thanks]
+## Say Thanks [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/D4mianWayne)
 
-Tested on Kali Linux with Python 3.6
+If you'd like to :tada: [say thanks](https://saythanks.io/to/D4mianWayne) :smile:
 
 ## Contributors
 [Arszilla][Arszilla]
