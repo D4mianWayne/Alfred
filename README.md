@@ -1,5 +1,5 @@
 # Alfred
-Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in 
+Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in
 pentesting and CTFs.
 
 ## Available Tools:
@@ -21,7 +21,13 @@ $ alfred
 ```
 
 ### Note
-`nmap`, `wpscan`, `sploitsearch` and `libimage-exiftool-perl` are required to use this framework.
+
+This framework requires the following packages:
+
+* `nmap`
+* `wpscan`
+* `sploitsearch`
+* `libimage-exiftool-perl`
 
 ## Additional Info
 Show your love [here][Say Thanks]
