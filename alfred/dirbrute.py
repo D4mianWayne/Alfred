@@ -29,10 +29,12 @@ def build_word_list(word_list_file, resume_word):
         return word_queue
     return None
 
-#Takes the word queue and builds an attempt list for each attempt. Then, each entry
-#in the attempt list (brute) is tried against the target URL/path. If the response
-#is successful, we print the output and add to our successful attempts list.
+
 def brute_forcer(word_queue, target_url, extensions):
+    """Takes the word queue and builds an attempt list for each attempt. Then, each entry
+       in the attempt list (brute) is tried against the target URL/path. If the response
+       is successful, we print the output and add to our successful attempts list.
+    """
     while not word_queue.empty():
         attempt_list = []
         attempt = word_queue.get()
