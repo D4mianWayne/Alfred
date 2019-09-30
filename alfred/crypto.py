@@ -4,13 +4,15 @@ import codecs
 
 
 def xor():
+    """xor two inputed strings.
+    """
     s1 = input("Enter 1st string: ")
     s2 = input("Enter 2nd string: ")
     if len(s1) != len(s2):
         print("[!]Strings lengths are not equal, you should use repeating key xor.")
     else:
         print(''.join(chr(ord(i)^ord(j)) for i,j in zip(s1,s2)))
-    
+
 def repeatxor():
     s1 = input("Enter string: ")
     key = input("Enter key: ")
@@ -30,10 +32,14 @@ def base64dec():
         print("[!]Padding is not valid.")
 
 def rot13():
+    """Calculate the rot13 i.e rotate alphabets to 13.
+    """
     s = input("Enter string: ")
     print(codecs.encode(s, "rot-13"))
 
 def xorbrute():
+    """Bruteforce a xor string.
+    """
     s1 = input("Enter string: ")
     for i in range(128):
         s = ''.join(chr(ord(j)^i) for j in s1)
