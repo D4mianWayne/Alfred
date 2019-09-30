@@ -23,7 +23,13 @@ $ alfred
 ```
 
 ### Note
-`nmap`, `wpscan`, `sploitsearch` and `libimage-exiftool-perl` are required to use this framework.
+
+This framework requires the following packages:
+
+* `nmap`
+* `wpscan`
+* `sploitsearch`
+* `libimage-exiftool-perl`
 
 ## Say Thanks [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/D4mianWayne)
 
