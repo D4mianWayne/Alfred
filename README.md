@@ -12,6 +12,7 @@ pentesting and CTFs.
 - `hash` - check hashvalue from hashtoolkit
 - `nspython` - DNS querying
 - `proxifetch` - Fetch proxy from API
+- `automaor` - Automate host discovery and perform the default scanning process
 
 ## Installation
 ```
