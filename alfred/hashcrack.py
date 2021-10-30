@@ -4,7 +4,7 @@ import re
 from termcolor import colored
 
 def hash_check(string:str):
-    print(colored("[*]Looking for hash on hashtoolkit database.","cyan",attrs=['reverse','blink']))
+    print(colored("[*] Looking for hash on hashtoolkit database.","cyan",attrs=['reverse','blink']))
     if len(string) == 32:
         r = requests.get("https://md5.pinasthika.com/api/decrypt?value="+string)
         if r.status_code == 200:
