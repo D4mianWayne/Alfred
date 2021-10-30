@@ -1,0 +1,3 @@
+termcolor
+PyPDF2
+requests
