@@ -1,0 +1,3 @@
+[console_scripts]
+alfred = alfred.__main__:main
+
