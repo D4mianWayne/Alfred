@@ -23,7 +23,7 @@ def hash_check(string:str):
         except:
             print(colored("[-] Nothing Found in the Database!","red"))
     else:
-        print("[!] Unable to search for this hash since MD5 & SHA1 are supported as of now.")
+        print("!Unable to search for this hash since MD5 & SHA1 are supported as of now.")
 
 
 def main():
