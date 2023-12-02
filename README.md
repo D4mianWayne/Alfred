@@ -1,8 +1,8 @@
 
-This tool has been deprecated, re-work for this is in progress.
-
+Current toolset is being removed, re-work is in progress.
 
 # Alfred
+
 Alfred is a penetration testing toolkit while introduces the user to commonly used and handy tools that are used in
 pentesting and CTFs.
 
