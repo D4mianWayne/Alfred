@@ -1,9 +1,5 @@
 
-
-This tool has been depreceated, it is in active development for new makeover.
-
-
-
+Current toolset is being removed, re-work is in progress.
 
 # Alfred
 
